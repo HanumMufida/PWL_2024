@@ -32,3 +32,18 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'Hanum Mufida A (2241760042)';
    });
+
+Route::get('/user/{hanum}', function ($hanum) {
+    return 'Nama SAYA '.$hanum;
+    });
+
+Route::get('/posts/{post}/comments/{comment}', function 
+    ($postId, $commentId) {
+     return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
+    });
+
+Route::get('/articles/{id}', function 
+    ($postId) {
+     return 'Halaman artikel dengan ID-'.$postId;
+    });
+    
